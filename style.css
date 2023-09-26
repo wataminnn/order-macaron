@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #FFFAEF;
+}
+
+.firstview{
+    height: 100vh;
+    background-image: url(./img/pc-firstview.png);
+    background-color: #FFFAEF;
+    background-size: cover;
+}
+
+.firstview img{
+    display: block;
+    margin: 0 auto;
+    width: 33%;
+    padding-top: 200px;
+}
+
+.about{
+    position: relative;
+}
+
+.about-background{
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+
+.about-contents{
+    padding-top: 200px;
+}
+
+.macaron-tower{
+    position: relative;
+    width: 13%;
+    height: 18vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.macaron-tower img{
+    width: 100%;
+}
+
+.green{
+    position: absolute;
+    z-index: 3;
+}
+
+.white{
+    position: absolute;
+    z-index: 2;
+    top: 75%;
+}
+
+.pink{
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+}
