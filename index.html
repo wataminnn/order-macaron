@@ -8,31 +8,228 @@
     <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BioRhyme&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
     <title>お取り寄せマカロン</title>
 </head>
 
 <body>
     <header>
+        <div class="nav">
+    
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer_input" class="drawer_open"><span></span></label>
+        
+            <!-- メニュー -->
+            <nav class="nav_content">
+              <ul class="nav_list">
+                <li class="nav_item nav_title">order-macaron</li>
+                <li class="nav_item"><a href="#firstview">TOP</a></li>
+                <li class="nav_item"><a href="#recommend">お取り寄せマカロン5選</a></li>
+                <li class="nav_item"><div class="nav_shop">
+                    <a href="pieere.html">PIERRE HERMÉ</a>
+                    <a href="">LADURÈE</a>
+                    <a href="">pâtisserie Sadaharu AOKI paris</a>
+                    <a href="">GLAMOURDISE</a>
+                    <a href="">LOUANGE TOKYO</a>
+                </div></li>
+                <li class="nav_item"><a href="#summery-table">見くらべ一覧表</a></li>
+              </ul>
+            </nav>
 
+            <div class="page-cover"></div>
+        </div>
     </header>
     <section class="firstview" id="firstview">
-        <img src="./img/logo8.png">
+        <h1><img src="./img/logo8.png"></h1>
     </section>
     <section class="about" id="about">
-        <div class="about-background">
-            <img src="./img/about-bgimg-F6BFC4.png" alt="">
+        <div class="about-image">
+            <div class="about-background">
+                <img src="./img/about-bgimg-F6BFC4.png" alt="">
+            </div>
+            <div class="about-contents">
+                <p class="about-message">自分へのご褒美に</p>
+                <p class="about-message ask">「お取り寄せマカロン」はどうですか？</p>
+                <div class="speech-bubble">
+                    <div class="speech-bubble-left">
+                        <div class="left-top bubble-left">
+                            <img class="bubble" src="./img/speech-bubble-left.png">
+                            <p class="bubble-text">丸くて可愛い<br>フォルム</p>
+                        </div>
+                        <div class="left-bottom bubble-left">
+                            <img class="bubble" src="./img/speech-bubble-left.png">
+                            <p class="bubble-text">ガナッシュと<br>メレンゲの食感</p>
+                        </div>
+                    </div>
+
+                    <div class="macaron-tower">
+                        <img class="green" src="./img/about/about-green.png" alt="">
+                        <img class="white" src="./img/about/about-white.png" alt="">
+                        <img class="pink" src="./img/about/about-pink.png" alt="">
+                    </div>
+
+                    <div class="speech-bubble-right">
+                        <div class="right-top bubble-right">
+                            <img class="bubble" src="./img/speech-bubble-right.png">
+                            <p class="bubble-text">丸くてかわいい<br>フォルム</p>
+                        </div>
+                        <div class="right-bottom bubble-right">
+                            <img class="bubble" src="./img/speech-bubble-right.png">
+                            <p class="bubble-text">ガナッシュと<br>メレンゲの食感</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="about-contents">
-            <p>自分へのご褒美に</p>
-            <p>「お取り寄せマカロン」はどうですか？</p>
-            <div class="macaron-tower">
-                <img class="green" src="./img/about/about-green.png" alt="">
-                <img class="white" src="./img/about/about-white.png" alt="">
-                <img class="pink" src="./img/about/about-pink.png" alt="">
+        <div class="about-text">
+            <p class="history">マカロンはフランスを代表するお菓子として有名ですが、実は発祥地はイタリアです。<br>
+                イタリア北西部にあるピエモンテ州地方の伝統的な焼き菓子「ビスコッティ・アマレッティ」がマカロンの原型であり、16世紀にフランス国王アンリ2世に嫁いだ、カトリーヌ・ド・メディシスによってフランスに持ち込まれたと言われています。
+                その後フランスの各地方で進化し、形や作り方、食感など様々なマカロンが生まれました。<br>
+                現在日本で主に食べられているマカロンは、パリの老舗パティスリーであるLADURÈE(ラデュレ)が考案した「マカロン・パリジャン」と呼ばれるものです。
+                着色したメレンゲにガナッシュやクリームを挟む、手間のかかる製法が用いられています。<br>
+                こうしてマカロンは、ワンランク上のお菓子として世界中で愛されています。
+            </p>
+        </div>
+    </section>
+    <section class="recommend" id="recommend">
+        <h2>お取り寄せマカロン</h2>
+        <div class="shop-info">
+            <div class="shop pierre">
+                <img class="shop-background" src="./img/shop-bgimg-D37A80.png" alt="">
+                <div class="shop-text">
+                    <img class="shop-image" src="./img/shop-img/pierre-img.png">
+                    <h3>PIERRE HERMÉ</h3>
+                    <p>メレンゲとガナッシュの組み合わせが絶妙な<br>
+                        受賞歴のある定番マカロン</p>
+                    <a href="pieere.html" class="btn">
+                        <p>詳しくはこちら</p>
+                        <img src="./img/arrow.png">
+                    </a>
+                </div>
+            </div>
+            <div class="shop laduree">
+                <img class="shop-background" src="./img/shop-bgimg-D37A80.png" alt="">
+                <div class="shop-text">
+                    <img class="shop-image" src="./img/shop-img/laduree-img.png">
+                    <h3>LADURÈE</h3>
+                    <p>マカロン・パリジャンを生んだ名店<br>
+                        色鮮やかで視覚から癒されるマカロンボックス</p>
+                    <a href="" class="btn">
+                        <p>詳しくはこちら</p>
+                        <img src="./img/arrow.png">
+                    </a>
+                </div>
+            </div>
+            <div class="shop aoki">
+                <img class="shop-background" src="./img/shop-bgimg-D37A80.png" alt="">
+                <div class="shop-text">
+                    <img class="shop-image" src="./img/shop-img/aoki-img.png">
+                    <h3>pâtisserie Sadaharu<br> 
+                        AOKI paris</h3>
+                    <p class="aoki-p">パリで研究された本場のマカロン<br>
+                        しっかりとした食感で食べ応えばっちり</p>
+                    <a href="" class="btn">
+                        <p>詳しくはこちら</p>
+                        <img src="./img/arrow.png">
+                    </a>
+                </div>
+            </div>
+            <div class="shop gramourdise">
+                <img class="shop-background" src="./img/shop-bgimg-D37A80.png" alt="">
+                <div class="shop-text">
+                    <img class="shop-image" src="./img/shop-img/gramoudise-img.png">
+                    <h3>GLAMOURDISE</h3>
+                    <p>甘党向けの新しいフレーバーが特徴<br>
+                        お得で手を伸ばしやすいマカロン</p>
+                    <a href="" class="btn">
+                        <p>詳しくはこちら</p>
+                        <img src="./img/arrow.png">
+                    </a>
+                </div>
+            </div>
+            <div class="shop louange">
+                <img class="shop-background" src="./img/shop-bgimg-D37A80.png" alt="">
+                <div class="shop-text">
+                    <img class="shop-image louage-shop-image" src="./img/shop-img/louange-img.png">
+                    <h3>LOUANGE TOKYO</h3>
+                    <p>ビビッドカラーが印象的<br>
+                        唯一無二なフレーバーの高級マカロン</p>
+                    <a href="" class="btn">
+                        <p>詳しくはこちら</p>
+                        <img src="./img/arrow.png">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
+    <section class="summary-table" id="summery-table">
+        <h2>見くらべ一覧表</h2>
+        <table class="radius-table">
+            <tr>
+                <th>店舗名</th>
+                <th>フレーバー</th>
+                <th>日持ち</th>
+                <th class="cost">値段</th>
+            </tr>
+            <tr>
+                <td class="shop-name"><a href="">PIERRE HERMÉ</a></td>
+                <td>全25種類</td>
+                <td class="keep-date">冷蔵：6日</td>
+                <td class="cost">3078<span>円<br>(6個入り)</span></td>
+            </tr>
+            <tr>
+                <td class="shop-name"><a href="">LADURÈE</a></td>
+                <td>全12種類</td>
+                <td class="keep-date">冷蔵：4日</td>
+                <td class="cost">3920<span>円<br>(6個入り)</span></td>
+            </tr>
+            <tr>
+                <td class="shop-name"><a href="">pâtisserie Sadaharu<br>AOKI paris</a></td>
+                <td>全12種類</td>
+                <td class="keep-date">冷蔵：5日<br>冷凍：30日</td>
+                <td class="cost">2247<span>円<br>(5個入り)</span></td>
+            </tr>
+            <tr>
+                <td class="shop-name"><a href="">GLAMOURDISE</a></td>
+                <td>全10種類</td>
+                <td class="keep-date">冷蔵：5日</td>
+                <td class="cost">1620<span>円<br>(6個入り)</span></td>
+            </tr>
+            <tr>
+                <td class="shop-name"><a href="">LOUANGE TOKYO</a></td>
+                <td>全8種類</td>
+                <td class="keep-date">冷蔵：7日<br>冷凍：30日</td>
+                <td class="cost">3240<span>円<br>(5個入り)</span></td>
+            </tr>
+        </table>
+        <p>気になるマカロンをお取り寄せして<br>
+            自分へのご褒美にちょっとした贅沢を楽しんでください！</p>
+        <img src="./img/last-message-macaron.png">
+    </section>
+    <footer>
+        <div class="footer-contents">
+            <p><a href="#firstview">TOP</a></p>
+            <p><a href="#recommend">お取り寄せマカロン5選</a></p>
+            <table>
+                <tr class="table-top">
+                    <td><a href="pieere.html">PIERRE HERMÉ</a></td>
+                    <td><a href="">LADURÈE</a></td>
+                    <td><a href="">pâtisserie Sadaharu AOKI paris</a></td>
+                </tr>
+                <tr class="table-bottom">
+                    <td><a href="">GLAMOURDISE</a></td>
+                    <td><a href="">LOUANGE TOKYO</a></td>
+                </tr>
+            </table>
+            <p><a href="#summery-table">見くらべ一覧表</a></p>
+        </div>
+        <p class="copywrite">&copy;order-macaron</p>
+    </footer>
 </body>
 
 </html>

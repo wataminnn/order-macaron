@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Zen Maru Gothic;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body{
+    background-color: #FFFAEF;
+}
+
+h1{
+    color: #D37A80;
+    text-align: center;
+    font-family: BioRhyme;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.68px;
+    margin-top: 160px;
+    margin-bottom: 120px;
+}
+
+.shop-info{
+    display: flex;
+    gap: 7.85%;
+    justify-content: center;
+}
+
+.shop-info img{
+    width: 28%;
+    margin: auto 0 0 0;
+}
+
+.shop-text{
+    width: 28%;
+}
+
+.shop-detail{
+    color: #402218;
+    text-align: justify;
+    font-family: Zen Maru Gothic;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.023%;
+    letter-spacing: 1.6px;
+}
+
+.product-name{
+    color: #402218;
+    text-align: right;
+    font-family: Zen Maru Gothic;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100.023%;
+    letter-spacing: 2.4px;
+    margin-top: 55px;
+    margin-bottom: 10px;
+}
+
+.cost{
+    text-align: right;
+    color: #402218;
+    font-family: Zen Maru Gothic;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.8px;
+}
+
+.cost span{
+    font-size: 18px;
+    letter-spacing: 1.8px;
+}
+
+.macaron-type{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 110px;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 180px;
+    margin-bottom: 200px;
+}
+
+.macaron{
+    text-align: center;
+    width: 280px;
+}
+
+.macaron img{
+    width: 200px;
+}
+
+.macaron p{
+    color: #402218;
+    font-family: Zen Maru Gothic;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 160px;
+    margin-bottom: 240px;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 330px;
+    height: 60px;
+    border: 1.5px solid #402218;
+}
+
+.btn p{
+    color: #402218;
+    font-family: Zen Maru Gothic;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+}
+
+.btn img{
+    width: 24px;
+}
+
+.icon{
+    height: 24px;
+}
+
+footer{
+    background-color: #D37A80;
+    color: #FFF;
+}
+
+.footer-contents{
+    padding: 40px 0 0 14.3%;
+}
+
+footer a{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footer-contents p{
+    font-family: Zen Maru Gothic;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 7px;
+    padding-bottom: 30px;
+}
+
+.footer-contents a:hover{
+    color: #F6BFC4;
+}
+
+.footer-contents table{
+    margin-bottom: 30px;
+    margin-left: 4.8%;
+}
+
+.footer-contents td{
+    text-align: center;
+    width: 300px;
+    height: 50px;
+}
+
+.footer-contents td a{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.6px;
+}
+
+
+.copywrite{
+    color: #FFF;
+    text-align: center;
+    font-family: Zen Maru Gothic;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 7px;
+    padding-bottom: 21px;
+}
