@@ -11,6 +11,33 @@
     <title>お取り寄せマカロン</title>
 </head>
 <body>
+    <header>
+        <div class="nav">
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer_input" class="drawer_open"><span></span></label>
+        
+            <!-- メニュー -->
+            <nav class="nav_content">
+              <ul class="nav_list">
+                <li class="nav_item nav_title">order-macaron</li>
+                <li class="nav_item"><a href="index.html#firstview">TOP</a></li>
+                <li class="nav_item"><a href="index.html#recommend">お取り寄せマカロン5選</a></li>
+                <li class="nav_item"><div class="nav_shop">
+                    <a href="pieere.html">PIERRE HERMÉ</a>
+                    <a href="laduree.html">LADURÈE</a>
+                    <a href="aoki.html">pâtisserie Sadaharu AOKI paris</a>
+                    <a href="glamourdise.html">GLAMOURDISE</a>
+                    <a href="louange.html">LOUANGE TOKYO</a>
+                </div></li>
+                <li class="nav_item"><a href="index.html#summery-table">見くらべ一覧表</a></li>
+              </ul>
+            </nav>
+            <div class="page-cover"></div>
+        </div>
+    </header>
     <h1>PIERRE HERMÉ</h1>
     <div class="shop-info">
         <img src="./img/shop-img/pierre-img.png" alt="">
@@ -51,14 +78,18 @@
     </div>
     <div class="button">
         <a class="btn shop-btn" href="https://www.pierreherme.co.jp/">
-            <img class="icon" src="./img/icon-shop.png">
+            <img class="brown" src="./img/icon-shop.png">
+            <img class="white" src="./img/icon-shop-white.png">
             <p>公式ホームページ</p>
-            <img src="./img/arrow-brown.png">
+            <img class="arrow-brown brown" src="./img/arrow-brown.png">
+            <img class="arrow-white white" src="./img/arrow.png">
         </a>
-        <a class="btn bag-btn" href="https://www.pierreherme.co.jp/product/macaron-set-6-regular.html">
-            <img class="icon" src="./img/icon-bag.png">
+        <a class="btn bag-btn" href="https://www.pierreherme.co.jp/product/?category=macarons&sale_policy=2">
+            <img class="brown" src="./img/icon-bag.png">
+            <img class="white" src="./img/icon-bag-white.png">
             <p>購入ページ</p>
-            <img src="./img/arrow-brown.png">
+            <img class="arrow-brown brown" src="./img/arrow-brown.png">
+            <img class="arrow-white white" src="./img/arrow.png">
         </a>
     </div>
     <footer>
@@ -68,12 +99,12 @@
             <table>
                 <tr class="table-top">
                     <td><a href="pieere.html">PIERRE HERMÉ</a></td>
-                    <td><a href="">LADURÈE</a></td>
-                    <td><a href="">pâtisserie Sadaharu AOKI paris</a></td>
+                    <td><a href="laduree.html">LADURÈE</a></td>
+                    <td><a href="aoki.html">pâtisserie Sadaharu AOKI paris</a></td>
                 </tr>
                 <tr class="table-bottom">
-                    <td><a href="">GLAMOURDISE</a></td>
-                    <td><a href="">LOUANGE TOKYO</a></td>
+                    <td><a href="glamourdise.html">GLAMOURDISE</a></td>
+                    <td><a href="louange.html">LOUANGE TOKYO</a></td>
                 </tr>
             </table>
             <p><a href="#summery-table">見くらべ一覧表</a></p>

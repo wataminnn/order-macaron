@@ -27,21 +27,6 @@ body{
     z-index: 100;
     cursor: pointer;
   }
-
-  @media screen and (max-width:390px){
-    .drawer_open {
-    display: flex;
-    height: 34px;
-    width: 95%;
-    padding-top: 30px;
-    margin-right: 25px;
-    justify-content: flex-end;
-    align-items: center;
-    position: fixed;
-    z-index: 200;
-    cursor: pointer;
-    }
-  }
  
   .drawer_open span,
   .drawer_open span:before,
@@ -65,21 +50,6 @@ body{
     border-radius: 0 0 15px 15px;
   }
 
-  @media screen and (max-width:390px){
-    .drawer_open span,
-    .drawer_open span:before,
-    .drawer_open span:after {
-        content: '';
-        display: block;
-        height: 1px;
-        width: 29px;
-        border-radius: 1px;
-        background: #fff;
-        transition: 0.5s;
-        position: absolute;
-    }
-  }
-  
   .drawer_open span:before {
     bottom: 10px;
   }
@@ -87,16 +57,6 @@ body{
   .drawer_open span:after {
     top: 10px;
   }
-  
-@media screen and (max-width: 390px){
-    .drawer_open span:before {
-        bottom: 7px;
-    }
-
-    .drawer_open span:after {
-        top: 7px;
-    }
-}
 
   #drawer_input:checked ~ .drawer_open span {
     background: rgba(255, 255, 255, 0);
@@ -171,7 +131,7 @@ body{
     color: #FFF;
     text-align: justify;
     font-family: Zen Maru Gothic;
-    font-size: 28px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 400;
     line-height: 150.023%;
@@ -183,7 +143,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     padding-left: 80px;
-    font-size: 20px;
+    font-size: 16px;
     width: 90%;
 }
 
@@ -199,28 +159,10 @@ body{
     color: #F6BFC4;
   }
 
-  @media screen and (max-width:390px){
-    .nav_list li{
-        margin-bottom: 25px;
-      }
-
-    .nav_list a{
-        font-size: 15px;
-        color: #fff;
-        text-decoration: none;
-      }
-  }
   
   #drawer_input:checked ~ .nav_content {
     bottom: 10%;
     top: 0;
-  }
-
-  @media screen and (max-width:390px) {
-    #drawer_input:checked ~ .nav_content {
-        left: 0%;
-        bottom: 50%;
-      }
   }
 
   #drawer_input:checked ~ .page-cover{
