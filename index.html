@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-copy.css">
     <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,42 +43,46 @@
         </div>
     </header>
     <section class="firstview" id="firstview">
-        <h1><img src="./img/logo8.png"></h1>
+        <h1><img class="logo" src="./img/logo8.png"></h1>
+        <img class="sp-firstview" src="./img/firstview/sp_firstview.png">
     </section>
     <section class="about" id="about">
         <div class="about-image">
             <div class="about-background">
-                <img src="./img/about-bgimg-F6BFC4.png" alt="">
+                <img class="about-pc" src="./img/about-bgimg-F6BFC4.png" alt="">
+                <img class="about-sp" src="./img/about-bgimg-F6BFC4-SP.png" alt="">
             </div>
             <div class="about-contents">
                 <p class="about-message">自分へのご褒美に</p>
-                <p class="about-message ask">「お取り寄せマカロン」はどうですか？</p>
-                <div class="speech-bubble">
-                    <div class="speech-bubble-left">
-                        <div class="left-top bubble-left">
-                            <img class="bubble" src="./img/speech-bubble-left.png">
-                            <p class="bubble-text">丸くて可愛い<br>フォルム</p>
-                        </div>
-                        <div class="left-bottom bubble-left">
-                            <img class="bubble" src="./img/speech-bubble-left.png">
-                            <p class="bubble-text">ガナッシュと<br>メレンゲの食感</p>
+                <p class="about-message ask">「お取り寄せマカロン」は<br class="message-br">どうですか？</p>
+                <div class="about-main">
+                    <div class="about-macarons">
+                        <div class="macaron-tower">
+                            <img class="green" src="./img/about/about-green.png" alt="">
+                            <img class="white" src="./img/about/about-white.png" alt="">
+                            <img class="pink" src="./img/about/about-pink.png" alt="">
                         </div>
                     </div>
-
-                    <div class="macaron-tower">
-                        <img class="green" src="./img/about/about-green.png" alt="">
-                        <img class="white" src="./img/about/about-white.png" alt="">
-                        <img class="pink" src="./img/about/about-pink.png" alt="">
-                    </div>
-
-                    <div class="speech-bubble-right">
-                        <div class="right-top bubble-right">
-                            <img class="bubble" src="./img/speech-bubble-right.png">
-                            <p class="bubble-text">丸くてかわいい<br>フォルム</p>
+                    <div class="speech-bubble">
+                        <div class="speech-bubble-left">
+                            <div class="left-top bubble-left">
+                                <img class="bubble" src="./img/speech-bubble-left.png">
+                                <p class="bubble-text">丸くて可愛い<br>フォルム</p>
+                            </div>
+                            <div class="left-bottom bubble-left">
+                                <img class="bubble" src="./img/speech-bubble-left.png">
+                                <p class="bubble-text">ガナッシュと<br>メレンゲの食感</p>
+                            </div>
                         </div>
-                        <div class="right-bottom bubble-right">
-                            <img class="bubble" src="./img/speech-bubble-right.png">
-                            <p class="bubble-text">ガナッシュと<br>メレンゲの食感</p>
+                        <div class="speech-bubble-right">
+                            <div class="right-top bubble-right">
+                                <img class="bubble" src="./img/speech-bubble-right.png">
+                                <p class="bubble-text">丸くてかわいい<br>フォルム</p>
+                            </div>
+                            <div class="right-bottom bubble-right">
+                                <img class="bubble" src="./img/speech-bubble-right.png">
+                                <p class="bubble-text">ガナッシュと<br>メレンゲの食感</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -95,7 +99,7 @@
         </div>
     </section>
     <section class="recommend" id="recommend">
-        <h2>お取り寄せマカロン</h2>
+        <h2>お取り寄せマカロン5選</h2>
         <div class="shop-info">
             <div class="shop pierre">
                 <img class="shop-background" src="./img/shop-bgimg-D37A80.png" alt="">
@@ -116,7 +120,7 @@
                     <img class="shop-image" src="./img/shop-img/laduree-img.png">
                     <h3>LADURÈE</h3>
                     <p>マカロン・パリジャンを生んだ名店<br>
-                        色鮮やかで視覚から癒されるマカロンボックス</p>
+                        色鮮やかで視覚から癒されるマカロン</p>
                     <a href="" class="btn">
                         <p>詳しくはこちら</p>
                         <img src="./img/arrow.png">
@@ -126,7 +130,7 @@
             <div class="shop aoki">
                 <img class="shop-background" src="./img/shop-bgimg-D37A80.png" alt="">
                 <div class="shop-text">
-                    <img class="shop-image" src="./img/shop-img/aoki-img.png">
+                    <img class="shop-image aoki-shop-image" src="./img/shop-img/aoki-img.png">
                     <h3>pâtisserie Sadaharu<br> 
                         AOKI paris</h3>
                     <p class="aoki-p">パリで研究された本場のマカロン<br>
@@ -167,46 +171,102 @@
     </section>
     <section class="summary-table" id="summery-table">
         <h2>見くらべ一覧表</h2>
-        <table class="radius-table">
-            <tr>
-                <th>店舗名</th>
-                <th>フレーバー</th>
-                <th>日持ち</th>
-                <th class="cost">値段</th>
-            </tr>
-            <tr>
-                <td class="shop-name"><a href="">PIERRE HERMÉ</a></td>
-                <td>全25種類</td>
-                <td class="keep-date">冷蔵：6日</td>
-                <td class="cost">3078<span>円<br>(6個入り)</span></td>
-            </tr>
-            <tr>
-                <td class="shop-name"><a href="">LADURÈE</a></td>
-                <td>全12種類</td>
-                <td class="keep-date">冷蔵：4日</td>
-                <td class="cost">3920<span>円<br>(6個入り)</span></td>
-            </tr>
-            <tr>
-                <td class="shop-name"><a href="">pâtisserie Sadaharu<br>AOKI paris</a></td>
-                <td>全12種類</td>
-                <td class="keep-date">冷蔵：5日<br>冷凍：30日</td>
-                <td class="cost">2247<span>円<br>(5個入り)</span></td>
-            </tr>
-            <tr>
-                <td class="shop-name"><a href="">GLAMOURDISE</a></td>
-                <td>全10種類</td>
-                <td class="keep-date">冷蔵：5日</td>
-                <td class="cost">1620<span>円<br>(6個入り)</span></td>
-            </tr>
-            <tr>
-                <td class="shop-name"><a href="">LOUANGE TOKYO</a></td>
-                <td>全8種類</td>
-                <td class="keep-date">冷蔵：7日<br>冷凍：30日</td>
-                <td class="cost">3240<span>円<br>(5個入り)</span></td>
-            </tr>
-        </table>
+        <div class="table-pc">
+            <table class="radius-table">
+                <tr>
+                    <th>店舗名</th>
+                    <th>フレーバー</th>
+                    <th>日持ち</th>
+                    <th class="cost">値段</th>
+                </tr>
+                <tr>
+                    <td class="shop-name"><a href="">PIERRE HERMÉ</a></td>
+                    <td>全25種類</td>
+                    <td class="keep-date">冷蔵：6日</td>
+                    <td class="cost">3078<span>円<br>(6個入り)</span></td>
+                </tr>
+                <tr>
+                    <td class="shop-name"><a href="">LADURÈE</a></td>
+                    <td>全12種類</td>
+                    <td class="keep-date">冷蔵：4日</td>
+                    <td class="cost">3920<span>円<br>(6個入り)</span></td>
+                </tr>
+                <tr>
+                    <td class="shop-name"><a href="">pâtisserie Sadaharu<br>AOKI paris</a></td>
+                    <td>全12種類</td>
+                    <td class="keep-date">冷蔵：5日<br>冷凍：30日</td>
+                    <td class="cost">2247<span>円<br>(5個入り)</span></td>
+                </tr>
+                <tr>
+                    <td class="shop-name"><a href="">GLAMOURDISE</a></td>
+                    <td>全10種類</td>
+                    <td class="keep-date">冷蔵：5日</td>
+                    <td class="cost">1620<span>円<br>(6個入り)</span></td>
+                </tr>
+                <tr>
+                    <td class="shop-name"><a href="">LOUANGE TOKYO</a></td>
+                    <td>全8種類</td>
+                    <td class="keep-date">冷蔵：7日<br>冷凍：30日</td>
+                    <td class="cost">3240<span>円<br>(5個入り)</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="table-sp-cover">
+            <div class="table-sp">
+                <table class="each-table">
+                    <tr><th class="shop-name">PIERRE HERMÉ</th></tr>
+                    <tr><td class="shop-table-info">
+                        <div>
+                            <p>フレーバー<br><span>全25種類</span></p>
+                            <p>日持ち<br><span>冷蔵：6日</span></p>
+                            <p>値段<br><span>3078</span>円(6個入)</p>
+                        </div>
+                    </td></tr>
+                </table>
+                <table class="each-table">
+                    <tr><th class="shop-name">LADURÈE</th></tr>
+                    <tr><td class="shop-table-info">
+                        <div>
+                            <p>フレーバー<br><span>全12種類</span></p>
+                            <p>日持ち<br><span>冷蔵：4日</span></p>
+                            <p>値段<br><span>3920</span>円(6個入)</p>
+                        </div>
+                    </td></tr>
+                </table>
+                <table class="each-table aoki-sp">
+                    <tr><th class="shop-name">pâtisserie Sadaharu AOKI paris</th></tr>
+                    <tr><td class="shop-table-info">
+                        <div>
+                            <p>フレーバー<br><span>全12種類</span></p>
+                            <p>日持ち<br><span>冷蔵：5日<br>冷凍：30日</span></p>
+                            <p>値段<br><span>2247</span>円(5個入)</p>
+                        </div>
+                    </td></tr>
+                </table>
+                <table class="each-table">
+                    <tr><th class="shop-name">GLAMOURDISE</th></tr>
+                    <tr><td class="shop-table-info">
+                        <div>
+                            <p>フレーバー<br><span>全10種類</span></p>
+                            <p>日持ち<br><span>冷蔵：5日</span></p>
+                            <p>値段<br><span>1620</span>円(6個入)</p>
+                        </div>
+                    </td></tr>
+                </table>
+                <table class="each-table">
+                    <tr><th class="shop-name">LOUANGE TOKYO</th></tr>
+                    <tr><td class="shop-table-info">
+                        <div>
+                            <p>フレーバー<br><span>全8種類</span></p>
+                            <p>日持ち<br><span>冷蔵：7日<br>冷凍：30日</span></p>
+                            <p>値段<br><span>3240</span>円(5個入)</p>
+                        </div>
+                    </td></tr>
+                </table>
+            </div>
+        </div>
         <p>気になるマカロンをお取り寄せして<br>
-            自分へのご褒美にちょっとした贅沢を楽しんでください！</p>
+            自分へのご褒美に<br class="message-br">ちょっとした贅沢を楽しんでください！</p>
         <img src="./img/last-message-macaron.png">
     </section>
     <footer>
