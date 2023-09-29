@@ -462,7 +462,7 @@ body{
     }
 }
 
-@media screen and (max-width:390px){
+@media screen and (max-width:600px){
     .about-w1200{
         display: none;
     }
@@ -504,10 +504,61 @@ body{
     }
 }
 
+.ask{
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width:1000px){
+    .ask{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .about-message{
+        font-size: 18px;
+        line-height: 220%;
+        letter-spacing: 7px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .ask{
+        margin-bottom: 60px;
+    }
+}
+
+.macaron-tower{
+    position: relative;
+    width: 200px;
+    height: 370px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+@media screen and (max-width:800px){
+    .about-contents{
+        padding-top: 100px;
+    }
+
+    .macaron-tower{
+        width: 150px;
+        height: 300px;
+        margin-top: 50px;
+    }
+}
+
 @media screen and (max-width:390px){
     .about-contents{
         padding-top: 50px;
         height: auto;
+    }
+
+    .macaron-tower{
+        width: 100px;
+        height: 195px;
+        margin-top: 0px;
     }
 
     .about-message{
@@ -519,26 +570,10 @@ body{
     .message-br{
         display: block;
     }
-}
 
-.ask{
-    margin-top: 20px;
-    margin-bottom: 150px;
-}
-
-.macaron-tower{
-    position: relative;
-    width: 200px;
-    height: 370px;
-    margin: 0 auto;
-    margin-top: 80px;
-}
-
-@media screen and (max-width:390px){
-    .macaron-tower{
-        width: 100px;
-        height: 195px;
-        margin-top: 0px;
+    .ask{
+        margin-top: 0;
+        margin-bottom: 40px;
     }
 }
 
@@ -638,9 +673,51 @@ body{
     padding-left: 10px;
 }
 
+@media screen and (max-width:800px){
+    .speech-bubble-left{
+        width: 250px;
+    }
+
+    .speech-bubble-right{
+        width: 250px;
+    }
+
+    .bubble-text{
+        font-size: 16px;
+        top:30px;
+    }
+
+    .left-bottom{
+        top: 150px;
+    }
+
+    .right-bottom{
+        top: 150px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .speech-bubble{
+        gap: 25%;
+    }
+
+    .speech-bubble-left{
+        width: 200px;
+    }
+
+    .speech-bubble-right{
+        width: 200px;
+    }
+
+    .bubble-text{
+        font-size: 14px;
+        top:27px;
+    }
+}
+
 @media screen and (max-width:390px){
     .about-main{
-        top: -130px;
+        top: 0px;
     }
 
     .about-macarons{
@@ -708,13 +785,17 @@ body{
 @media screen and (max-width:1100px){
     .history{
         width: 82%;
-        margin-top: 0;
+        margin-top: 150px;
     }
 }
 
 @media screen and (max-width:850px){
     .about-text{
         margin-top: 0px;
+    }
+
+    .history{
+        margin-top: 0;
     }
 }
 
@@ -745,8 +826,16 @@ body{
     padding-top: 15px;
 }
 
+@media screen and (max-width:390px){
+    .recommend-title h2{
+    font-size: 20px;
+    line-height: 100.023%; /* 20.005px */
+    letter-spacing: 4px;
+    }
+}
+
 .recommend-title img{
-    width: 7%;
+    width: 100px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -998,8 +1087,16 @@ body{
     padding-top: 15px;
 }
 
+@media screen and (max-width:390px){
+    .summary-table-title h2{
+    font-size: 20px;
+    line-height: 100.023%; /* 20.005px */
+    letter-spacing: 4px;
+    }
+}
+
 .summary-table-title img{
-    width: 8%;
+    width: 100px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -1140,7 +1237,7 @@ body{
         font-size: 26px;
     }
 
-    .summary-table img{
+    .summary-table-macaron{
         width: 180px;
         margin-left: 75%;
     }
