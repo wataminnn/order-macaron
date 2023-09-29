@@ -46,7 +46,7 @@ body{
     font-size: 14px;
     text-align: center;
     padding-bottom: 2px;
-    line-height: 14px;
+    line-height: 100%;
   }
 
   @media screen and (max-width:390px){
@@ -54,6 +54,10 @@ body{
     .drawer_open span:before,
     .drawer_open span:after {
         width: 40px;
+    }
+
+    .drawer_open span:before{
+        font-size: 11px;
     }
   }
   .drawer_open span:before{
