@@ -40,6 +40,15 @@ body{
     position: absolute;
   }
 
+  .drawer_open span:before{
+    content: 'Menu';
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 2px;
+    line-height: 14px;
+  }
+
   @media screen and (max-width:390px){
     .drawer_open span,
     .drawer_open span:before,
@@ -58,11 +67,11 @@ body{
   }
 
   .drawer_open span:before {
-    bottom: 10px;
+    bottom: 8px;
   }
 
   .drawer_open span:after {
-    top: 10px;
+    top: 8px;
   }
 
   @media screen and (max-width:390px){
@@ -85,6 +94,8 @@ body{
     bottom: 0;
     height: 3px;
     border-radius: 0;
+    content: '';
+    padding-bottom: 0;
     transform: rotate(45deg);
   }
   
@@ -163,6 +174,12 @@ body{
     line-height: 150.023%;
     letter-spacing: 9.8px;
     transition: 0.5s;
+  }
+
+  .drawer_open p{
+    z-index: 3;
+    color: #FFF;
+    text-align: justify;
   }
 
 .nav_shop{
@@ -381,7 +398,7 @@ body{
     z-index: 2;
 }
 
-.pc-firstview{
+video{
     width: 100%;
     left: 0;
     bottom: 0;
@@ -403,7 +420,7 @@ body{
         width: 40%;
     }
 
-    .pc-firstview{
+    video{
         display: none;
     }
 
@@ -1024,7 +1041,7 @@ body{
 @media screen and (max-width:390px){
     .shop-text p{
         font-size: 13px;
-        font-weight: 300;
+        font-weight: 400;
         letter-spacing: 1.69px;
         margin: 15px 0;
     }
@@ -1536,4 +1553,136 @@ footer a{
     .copywrite{
         font-size: 12px;
     }
+}
+
+.scroll_left {
+    -webkit-transition: 0.8s ease-in-out;
+    -moz-transition: 0.8s ease-in-out;
+    -o-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
+    transform: translateX(-30px);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+}
+.scroll_left.on {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1.0;
+    transform: translateX(0);
+}
+
+.scroll_right {
+    -webkit-transition: 0.8s ease-in-out;
+    -moz-transition: 0.8s ease-in-out;
+    -o-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
+    transform: translateX(30px);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+}
+.scroll_right.on {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1.0;
+    transform: translateX(0);
+}
+
+.scroll_up {
+    transition: 0.8s ease-in-out;
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  .scroll_up.on {
+    transform: translateY(0);
+    opacity: 1.0;
+  }
+  
+  .loader-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #F6BFC4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* ローディングアニメーション */
+  .loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #ffffff;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+span.smoothText {
+	overflow: hidden;
+	display: block;
+}
+
+/* アニメーションで傾斜がついている文字列を水平に戻す*/
+span.smoothTextTrigger{
+	transition: 1s ease-in-out;
+	transform: translate3d(0,100%,0) skewY(12deg);
+	transform-origin: left;
+	display: block;
+}
+span.smoothTextTrigger.smoothTextAppear{
+    transform: translate3d(0,0,0) skewY(0);
 }

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="main.js"></script>
     <title>お取り寄せマカロン</title>
 </head>
@@ -19,10 +19,8 @@
         <div class="nav">
             <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
             <input id="drawer_input" class="drawer_hidden" type="checkbox">
-        
             <!-- ハンバーガーアイコン -->
             <label for="drawer_input" class="drawer_open"><span></span></label>
-        
             <!-- メニュー -->
             <nav class="nav_content">
               <ul class="nav_list">
@@ -40,11 +38,14 @@
               </ul>
             </nav>
             <div class="page-cover"></div>
+            <div class="loader-bg">
+                <div class="loader"></div>
+              </div>
         </div>
     </header>
     <section class="firstview" id="firstview">
         <h1><img class="logo" src="./img/logo8.png"></h1>
-        <img class="pc-firstview" src="./img/firstview/pc-firstview.png">
+        <video src="./firstview.mp4" autoplay muted></video>
         <img class="sp-firstview" src="./img/firstview/sp_firstview.png">
     </section>
     <section class="about" id="about">
@@ -67,22 +68,22 @@
                             </div>
                         </div>
                         <div class="speech-bubble">
-                            <div class="speech-bubble-left">
-                                <div class="left-top bubble-left">
+                            <div class="speech-bubble-right">
+                                <div class="left-top bubble-left scroll_right">
                                     <img class="bubble" src="./img/speech-bubble-left.png">
                                     <p class="bubble-text">丸くて可愛い<br>フォルム</p>
                                 </div>
-                                <div class="left-bottom bubble-left">
+                                <div class="left-bottom bubble-left scroll_right">
                                     <img class="bubble" src="./img/speech-bubble-left.png">
                                     <p class="bubble-text">ガナッシュと<br>メレンゲの食感</p>
                                 </div>
                             </div>
                             <div class="speech-bubble-right">
-                                <div class="right-top bubble-right">
+                                <div class="right-top bubble-right scroll_left">
                                     <img class="bubble" src="./img/speech-bubble-right.png">
                                     <p class="bubble-text">種類豊富な<br>フレーバー</p>
                                 </div>
-                                <div class="right-bottom bubble-right">
+                                <div class="right-bottom bubble-right scroll_left">
                                     <img class="bubble" src="./img/speech-bubble-right.png">
                                     <p class="bubble-text">華やかな<br>色合い</p>
                                 </div>
@@ -92,7 +93,7 @@
                 </div>
             </div>
         </div>
-        <div class="about-text">
+        <div class="about-text scroll_up">
             <p class="history">マカロンはフランスを代表するお菓子として有名ですが、実は発祥地はイタリアです。<br>
                 イタリア北西部にあるピエモンテ州地方の伝統的な焼き菓子「ビスコッティ・アマレッティ」がマカロンの原型であり、16世紀にフランス国王アンリ2世に嫁いだ、カトリーヌ・ド・メディシスによってフランスに持ち込まれたと言われています。
                 その後フランスの各地方で進化し、形や作り方、食感など様々なマカロンが生まれました。<br>
@@ -108,7 +109,7 @@
             <h2>お取り寄せマカロン5選</h2>
         </div>
         <div class="shop-info">
-            <div class="shop pierre">
+            <div class="shop pierre scroll_up">
                 <img class="shop-background" src="./img/shop-bgimg-D37A80.png" alt="">
                 <div class="shop-text">
                     <img class="shop-image" src="./img/shop-img/pierre-img.png">
@@ -121,7 +122,7 @@
                     </a>
                 </div>
             </div>
-            <div class="shop laduree">
+            <div class="shop laduree scroll_up">
                 <img class="shop-background" src="./img/shop-bgimg-D37A80.png" alt="">
                 <div class="shop-text">
                     <img class="shop-image" src="./img/shop-img/laduree-img.png">
@@ -134,7 +135,7 @@
                     </a>
                 </div>
             </div>
-            <div class="shop aoki">
+            <div class="shop aoki scroll_up">
                 <img class="shop-background" src="./img/shop-bgimg-D37A80.png" alt="">
                 <div class="shop-text">
                     <img class="shop-image aoki-shop-image" src="./img/shop-img/aoki-img.png">
@@ -148,7 +149,7 @@
                     </a>
                 </div>
             </div>
-            <div class="shop gramourdise">
+            <div class="shop gramourdise scroll_up">
                 <img class="shop-background" src="./img/shop-bgimg-D37A80.png" alt="">
                 <div class="shop-text">
                     <img class="shop-image" src="./img/shop-img/glamoudise-img.png">
@@ -161,7 +162,7 @@
                     </a>
                 </div>
             </div>
-            <div class="shop louange">
+            <div class="shop louange scroll_up">
                 <img class="shop-background" src="./img/shop-bgimg-D37A80.png" alt="">
                 <div class="shop-text">
                     <img class="shop-image louage-shop-image" src="./img/shop-img/louange-img.png">
@@ -181,7 +182,7 @@
             <img src="./img/subtitle2.png">
             <h2>見くらべ一覧表</h2>
         </div>
-        <div class="table-pc">
+        <div class="table-pc scroll_up">
             <table class="radius-table">
                 <tr>
                     <th>店舗名</th>
@@ -222,7 +223,7 @@
             </table>
         </div>
         <div class="table-sp-cover">
-            <div class="table-sp">
+            <div class="table-sp scroll_up">
                 <table class="each-table">
                     <tr><th class="shop-name">PIERRE HERMÉ</th></tr>
                     <tr><td class="shop-table-info">
@@ -275,8 +276,8 @@
                 </table>
             </div>
         </div>
-        <p>気になるマカロンをお取り寄せして<br>
-            自分へのご褒美に<br class="last-message-br">ちょっとした贅沢を楽しんでくださいね！</p>
+        <p><span class="smoothText"><span class="smoothTextTrigger">気になるマカロンをお取り寄せして<br>
+            自分へのご褒美に<br class="last-message-br">ちょっとした贅沢を楽しんでくださいね！</span></span></p>
         <img class="summary-table-macaron" src="./img/last-message-macaron.png">
     </section>
     <footer>
