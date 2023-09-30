@@ -7,7 +7,9 @@
     <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">   
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="detail.js"></script> 
     <title>お取り寄せマカロン</title>
 </head>
 <body>
@@ -40,8 +42,8 @@
     </header>
     <h1>pâtisserie Sadaharu AOKI paris</h1>
     <div class="shop-info">
-        <img src="./img/shop-img/aoki-img.png" alt="">
-        <div class="shop-text">
+        <img class="scroll_left" src="./img/shop-img/aoki-img.png" alt="">
+        <div class="shop-text scroll_right">
             <p class="shop-detail">パティスリー・サダハル・アオキ・パリは、パリで愛されているパティシエ青木定治さんのパティスリーです。青木さんが３年間パリで「美味しいマカロン」をとことん追求し完成したマカロンは、メレンゲはさっくり、挟まれたクリームやガナッシュはしっとりとしていて、満足感があります！<br>
                 パッケージは白地にロゴの入ったシンプルで洗練されたデザインです！<br>
                 日持ちは冷蔵保存で5日、冷凍保存で30日です。</p>
@@ -49,29 +51,29 @@
             <p class="cost">2247<span>円(送料別)</span></p>
         </div>
     </div>
-    <div class="macaron-type">
-        <div class="macaron">
+    <div class="macaron-type flex delayScroll">
+        <div class="macaron box">
             <img src="./img/aoki/aoki_pistachio.png" alt="">
             <p>抹茶</p>
         </div>
-        <div class="macaron">
+        <div class="macaron box">
             <img src="./img/aoki/aoki_charamel.png" alt="">
-            <p>キャラメル サレ<br class="only-sp">-塩キャラメル-</p>
+            <p>キャラメル サレ<br>-塩キャラメル-</p>
         </div>
-        <div class="macaron">
+        <div class="macaron box">
             <img src="./img/aoki/aoki_sitron.png" alt="">
             <p>シトロン<br class="only-sp">-レモン-</p>
         </div>
-        <div class="macaron">
+        <div class="macaron box">
             <img src="./img/aoki/aoki_choco.png" alt="">
             <p>ショコラ</p>
         </div>
-        <div class="macaron">
+        <div class="macaron box">
             <img src="./img/aoki/aoki_berry.png" alt="">
             <p>フランボワーズ</p>
         </div>
     </div>
-    <div class="button">
+    <div class="butto scroll_up">
         <a class="btn shop-btn" href="https://www.sadaharuaoki.jp/">
             <img class="brown" src="./img/icon-shop.png">
             <img class="white" src="./img/icon-shop-white.png">

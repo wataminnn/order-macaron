@@ -803,10 +803,10 @@ video{
     margin-top: 180px;
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:1200px){
     .history{
         width: 82%;
-        margin-top: 150px;
+        margin-top: 200px;
     }
 }
 
@@ -816,7 +816,15 @@ video{
     }
 
     .history{
-        margin-top: 0;
+        margin-top: 250px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .history{
+        margin-top: 50px;
+        font-size: 16px;
+        letter-spacing: 6.0px;
     }
 }
 
@@ -1064,11 +1072,33 @@ video{
     height: 40px;
     margin: 0 90px;
     padding: 0 20.5px;
+    transition: 0.5s;
 }
 
 .btn img{
     width: 25px;
     height: 10px;
+}
+
+.arrow-pink{
+    display: none;
+}
+
+.btn:hover{
+    color: #D37A80;
+    background-color: #fff;
+
+    .arrow-white{
+        display: none;
+    }
+
+    .arrow-pink{
+        display: block;
+    }
+}
+
+.btn:hover p{
+    color: #D37A80;
 }
 
 @media screen and (max-width:1000px){

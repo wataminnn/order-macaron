@@ -7,7 +7,9 @@
     <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">   
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="detail.js"></script>  
     <title>お取り寄せマカロン</title>
 </head>
 <body>
@@ -40,8 +42,8 @@
     </header>
     <h1>LADURÈE</h1>
     <div class="shop-info">
-        <img src="./img/shop-img/laduree-img.png" alt="">
-        <div class="shop-text">
+        <img class="scroll_left" src="./img/shop-img/laduree-img.png" alt="">
+        <div class="shop-text scroll_right">
             <p class="shop-detail">マカロン・パリジャンを作り出した老舗パティスリーLADURÈE(ラデュレ)のマカロンは、宝石を彷彿とさせる華やかな色合いをしています。ラデュレのマカロンタワーを見たことがある人もいるのではないでしょうか。<br>
                 しっとりとした食感とラデュレ特有のフレーバーが楽しめるのも魅力の一つです！<br>
                 ラデュレのマカロンボックスのデザインは上品で可愛く、見ているだけでも気分が上がります！<br>
@@ -50,33 +52,33 @@
             <p class="cost">3920<span>円(送料別)</span></p>
         </div>
     </div>
-    <div class="macaron-type">
-        <div class="macaron">
+    <div class="macaron-type flex delayScroll">
+        <div class="macaron box">
             <img src="./img/laduree/laduree_antoinette.png" alt="">
             <p>テ･マリー･<br class="only-sp">アントワネット</p>
         </div>
-        <div class="macaron">
+        <div class="macaron box">
             <img src="./img/laduree/laduree_choco.png" alt="">
             <p>ショコラ</p>
         </div>
-        <div class="macaron">
+        <div class="macaron box">
             <img src="./img/laduree/laduree_pistacio.png" alt="">
             <p>ピスタッシュ</p>
         </div>
-        <div class="macaron">
+        <div class="macaron box">
             <img src="./img/laduree/laduree_rose.png" alt="">
             <p>ローズ</p>
         </div>
-        <div class="macaron">
+        <div class="macaron box">
             <img src="./img/laduree/laduree_vanire.png" alt="">
             <p>ヴァニーユ</p>
         </div>
-        <div class="macaron">
+        <div class="macaron box">
             <img src="./img/laduree/laduree_berry.png" alt="">
             <p>フランボワーズ</p>
         </div>
     </div>
-    <div class="button">
+    <div class="button scroll_up">
         <a class="btn shop-btn" href="https://www.laduree.jp/">
             <img class="brown" src="./img/icon-shop.png">
             <img class="white" src="./img/icon-shop-white.png">

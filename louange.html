@@ -7,7 +7,9 @@
     <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">   
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="detail.js"></script>  
     <title>お取り寄せマカロン</title>
 </head>
 <body>
@@ -40,37 +42,37 @@
     </header>
     <h1>LOUANGE TOKYO</h1>
     <div class="shop-info">
-        <img src="./img/shop-img/louange-img.png" alt="">
-        <div class="shop-text">
+        <img class="scroll_left" src="./img/shop-img/louange-img.png" alt="">
+        <div class="shop-text scroll_right">
             <p class="shop-detail">LOUANGE TOKYO(ルワンジュ東京)のマカロンは他パティスリーにはない唯一無二のフレーバーです。フォアグラやトリュフなど贅沢な材料を用いた高級マカロンです！絞ったクリームの中にソースやジュレが仕込まれているので、一つ一つがとても複雑で奥行き深い味わいです。甘いだけでなく、塩味や酸味も感じられるマカロンなので、お菓子というより、オードブルのように感じました！<br>
                 日持ちは冷蔵保存で5日、冷凍保存で30日です。</p>
             <p class="product-name">LUXE MACARON</p>
             <p class="cost">3240<span>円(送料別)</span></p>
         </div>
     </div>
-    <div class="macaron-type">
-        <div class="macaron">
+    <div class="macaron-type flex delayScroll">
+        <div class="macaron box">
             <img src="./img/louange/louange_fraise.png" alt="">
             <p>FRAISE<span class="only-pc"> </span><br class="only-sp">BASIL</p>
         </div>
-        <div class="macaron">
+        <div class="macaron box">
             <img src="./img/louange/louange_truffe.png" alt="">
             <p>CARDAMON<span class="only-pc"> </span><br class="only-sp">TRUFFE</p>
         </div>
-        <div class="macaron">
+        <div class="macaron box">
             <img src="./img/louange/louange_chassis.png" alt="">
             <p>MARRON<span class="only-pc"> </span><br class="only-sp">CASSIS</p>
         </div>
-        <div class="macaron">
+        <div class="macaron box">
             <img src="./img/louange/louange_golgonzola.png" alt="">
             <p>GORGONZOLA<span class="only-pc"> </span><br class="only-sp">& HONEY</p>
         </div>
-        <div class="macaron">
+        <div class="macaron box">
             <img src="./img/louange/louange_apricot.png" alt="">
             <p>FOIEGRAS<span class="only-pc"> </span><br class="only-sp">APRICOT</p>
         </div>
     </div>
-    <div class="button">
+    <div class="button scroll_up">
         <a class="btn shop-btn" href="https://www.louange-tokyo.com/lt/">
             <img class="brown" src="./img/icon-shop.png">
             <img class="white" src="./img/icon-shop-white.png">
